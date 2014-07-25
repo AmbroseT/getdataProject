@@ -1,23 +1,10 @@
 ### GETTING AND CLEANING DATA - PROJECT CODE BOOK
 
-The code book
+These features were collected from text files created from an experiment by *Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.* that measured acceleration and gyroscopic data from Samsung Galaxy SII devices worn by 30 subjects. The 30 subjects were divided into two groups - test and training groups. Some text files are just text describing labels, mapping of values, and features. The other text files are actually data sets in table form within each text file.
 
-1. information about the variables (including units!) in the data set not contained in the tidy data
-   * e.g. variable may be in US dollars, units can be in thousands or millions  
-2. information about the summary choices you made
-   * e.g. did you use the median or the mean?  
-3. information about the experimental study design you used
-   * the way that you collected the data, was it in a db, was it an experiment
+'Features' refer to the columns in the complete data sets, or the variables recorded in the study. Only the features that measure the mean and standard deviation have been extracted into the tidy data set. Their names have been slightly cleaned up so that R does not incorrectly mislabel the written tidy data set file.The features are explained below. 
 
-Some other important tips
-
-* a common format for this document is a Word/text file 
-  * or markdown file
-* there should be a section called "Study design" that has a thorough description of how you collected the data
-* there must be a section called "Code book" that describes each variable and its units
-  
-
-The following is the README.txt from the original experiment files:
+The following is an excerpt from the README.txt file from the original experiment files:
 >The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
 >Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
@@ -28,8 +15,6 @@ The following is the README.txt from the original experiment files:
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
 ***
-
-'Features' refer to the columns in the complete data sets, or the variables recorded in the study. Only the features that measure the mean and standard deviation have been extracted into the tidy data set. Their names have been slightly cleaned up so that R does not incorrectly mislabel the written tidy data set file.The features are explained below. 
 
 All measurement data have been normalized to [-1, 1].  There are no units.
 
@@ -43,7 +28,8 @@ from 1 to 30.
 ```
 activity
 
-This is the activity performed by the subject when being measured for each of the variables as appropriate.  There are 6 recorded activities:
+This is the activity performed by the subject when being measured for each of the variables  
+as appropriate.  There are 6 recorded activities:
 
 1 WALKING
 2 WALKING_UPSTAIRS
