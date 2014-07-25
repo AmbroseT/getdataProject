@@ -26,7 +26,8 @@ activity
 ```
 tBodyAcc.mean.X
  
-time domain signals (identified with the leading 't' in the name of the variable), from the Galaxy SII embedded accelerometer, measuring Body acceleration on the x-axis
+time domain signals (identified with the leading 't' in the name of the variable),  
+from the Galaxy SII embedded accelerometer, measuring Body acceleration on the x-axis
 
 ```
 ```
@@ -42,7 +43,8 @@ tBodyAcc.mean.Z
 ```
 tGravityAcc.mean.X
 
-time domain signals (identified with the leading 't' in the name of the variable), from the Galaxy SII embedded accelerometer, measuring gravity acceleration on the x-axis
+time domain signals (identified with the leading 't' in the name of the variable),  
+from the Galaxy SII embedded accelerometer, measuring gravity acceleration on the x-axis
 
 ```
 ```
@@ -70,7 +72,8 @@ tBodyAccJerk.mean.Z
 ```
 tBodyGyro.mean.X
 
-time domain signals (identified with the leading 't' in the name of the variable), from the Galaxy SII embedded gyroscope, measuring body acceleration on the x-axis
+time domain signals (identified with the leading 't' in the name of the variable),  
+from the Galaxy SII embedded gyroscope, measuring body acceleration on the x-axis
 
 ```
 ```
