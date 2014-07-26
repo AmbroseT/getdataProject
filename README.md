@@ -94,6 +94,7 @@ This is the R code file. It is saved in the working directory. When run, it crea
 - cleans up the column names
 - orders and aggregates the data by subjects and activity
 - writes the final tidy data to a file named **finalData_<*date and time of download*>.txt**
+- writes the final tidy data to a file named **finalData2_<*date and time of download*>.txt**
 
 There are comments within the code that give more detail to each of the tasks listed above.  You can view the R code [here](https://github.com/AmbroseT/getdataProject/blob/master/run_analysis.R).
 
