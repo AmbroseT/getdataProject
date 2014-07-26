@@ -41,7 +41,7 @@ run_analysis <- function() {
   uciDir <- "./data/temp/UCI HAR Dataset/"
   
   ## ----------------------------------------------------------------------------------
-  ## read in the values from the test and trianing files. there are separate files for:
+  ## read in the values from the test and training files. there are separate files for:
   ## - test and training data (all obseravations)
   ## - test and training activity data (all observations)
   ## - test and training subject data (all observations)
@@ -68,7 +68,7 @@ run_analysis <- function() {
    
   ## ----------------------------------------------------------------------
   ## relabel the test and training subjects data set to a meaningful colunn 
-  ## name. 
+  ## name. both names must be set for a proper rbind() later on.
   ## ----------------------------------------------------------------------
   colnames(testSubjects) <- "subject.id"
   colnames(trainSubjects) <- "subject.id"
@@ -76,7 +76,7 @@ run_analysis <- function() {
   ## -----------------------------------------------------------------
   ## convert from numeric to character for use in sapply later on, and
   ## relabel the test and training activity data set with a readable 
-  ## column name.
+  ## column name. both names must be set for a proper rbind() later on
   ## -----------------------------------------------------------------
   colnames(testActivity) <- "activity"
   colnames(trainActivity) <- "activity"
@@ -126,11 +126,7 @@ run_analysis <- function() {
   ## order by subject then by activity into a new variable 'sample.1'
   ## ----------------------------------------------------------------
   sample.1 <- sample[order(sample$subject.id, sample$activity),]
-  
-  ## --> maybe not neccessary: make subject.id and activity factors 
-  ## sample.1$subject.id <- as.factor(sample.1$subject.id)
-  ## sample.1$activity <- as.factor(sample.1$activity)
-  
+    
   ## ---------------------------------------------------------------------------
   ## aggregate the data by subject and activity, and get the mean of the columns
   ## into a new data set called 'finalData'
@@ -146,21 +142,5 @@ run_analysis <- function() {
   ## -----------------------------------------------------------------------------
   write.table(finalData, paste(uciDir,"finalData_", datedownloaded, ".txt", sep=""), sep="\t")
   message("tidy data set file written.")
-  
-  ## The code book
-  ##
-  ## 1. information about the variables (including units!) in the data set not contained in the tidy data
-  ##   * e.g. variable may be in US dollars, units can be in thousands or millions  
-  ## 2. information about the summary choices you made
-  ##   * e.g. did you use the median or the mean?  
-  ## 3. information about the experimental study design you used
-  ##   * the way that you collected the data, was it in a db, was it an experiment
-  ##
-  ## Some other important tips
-  ##
-  ## * a common format for this document is a Word/text file 
-  ##    * or markdown file
-  ## * there should be a section called "Study design" that has a thorough description of how you collected the data
-  ## * there must be a section called "Code book" that describes each variable and its units
   
 }
