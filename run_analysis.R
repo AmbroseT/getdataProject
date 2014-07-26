@@ -8,6 +8,12 @@ run_analysis <- function() {
   ## - Create a second, independent tidy data set with the average of each variable for each activity and each subject.
   ## ==================================================================================================================
   
+  ## ------------------------------------------------------------------------------
+  ## the gdata library is loaded so that the function write.fwf() can be used. This
+  ## assumes that the gdata package has already been installed on your system
+  ## ------------------------------------------------------------------------------
+  library(gdata)
+  
   ## ---------------------------------------------------------------------------------
   ## For better reproducibility, the following code will download the zip file, record
   ## the date, and extract the files if they do not exist. the location of the 
@@ -139,8 +145,12 @@ run_analysis <- function() {
   ## write the final tidy data set to a file with write.table() appending the date
   ## it was downloaded. if the file already exists, the file name will be appended
   ## with 'localCopy'
+  ## another file will be written using write.fwf() function from the gdata
+  ## library so that column alignment is more readable on the web or github
   ## -----------------------------------------------------------------------------
-  write.table(finalData, paste(uciDir,"finalData_", datedownloaded, ".txt", sep=""), sep="\t")
+  write.table(finalData, paste(uciDir,"finalData_", datedownloaded, ".txt", sep=""), quote=FALSE, sep="\t", row.names=FALSE) 
+  write.fwf(finalData, paste(uciDir,"finalData2_", datedownloaded, ".txt", sep=""), quote=FALSE, sep='\t', justify="right")
+  
   message("tidy data set file written.")
   
 }

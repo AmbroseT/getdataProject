@@ -1,6 +1,6 @@
 ### GETTING AND CLEANING DATA - PROJECT CODE BOOK
 
-These features were collected from text files created from an experiment by *Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.* that measured acceleration and gyroscopic data from Samsung Galaxy SII devices worn by 30 subjects. The 30 subjects were divided into two groups - test and training groups. Some text files are just text describing labels, mapping of values, and features. The other text files are actually data sets in table form within each text file.
+These features were collected from text files created from an experiment by *Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012* that measured acceleration and gyroscopic data from Samsung Galaxy SII devices worn by 30 subjects. The 30 subjects were divided into two groups - test and training groups. Some text files are just text describing labels, mapping of values, and features. The other text files are actually data sets in table form within each text file.
 
 'Features' refer to the columns in the complete data sets, or the variables recorded in the study. Only the features that measure the mean and standard deviation have been extracted into the tidy data set. Their names have been slightly cleaned up so that R does not incorrectly mislabel the written tidy data set file.The features are explained below. 
 
@@ -21,12 +21,16 @@ All measurement data have been normalized to [-1, 1].  There are no units.
 ``` 
 subject.id
 
+integer
+
 The person who participated in the study.  There are 30 subjects, each with a unique id  
 from 1 to 30.
 
 ```
 ```
 activity
+
+factor
 
 This is the activity performed by the subject when being measured for each of the variables  
 as appropriate.  There are 6 recorded activities:
@@ -41,7 +45,9 @@ as appropriate.  There are 6 recorded activities:
 ```
 ```
 tBodyAcc.mean.X
- 
+
+numeric
+
 time domain signals (identified with the leading 't' in the name of the variable),  
 from the Galaxy SII embedded accelerometer, measuring Body acceleration on the x-axis
 
@@ -50,6 +56,8 @@ The mean value was recorded.
 ```
 ```
 tBodyAcc.mean.Y
+
+numeric
 
 time domain signals (identified with the leading 't' in the name of the variable),  
 from the Galaxy SII embedded accelerometer, measuring Body acceleration on the y-axis
@@ -60,6 +68,8 @@ The mean value was recorded.
 ```
 tBodyAcc.mean.Z
 
+numeric
+
 time domain signals (identified with the leading 't' in the name of the variable),  
 from the Galaxy SII embedded accelerometer, measuring Body acceleration on the z-axis
 
@@ -68,6 +78,8 @@ The mean value was recorded.
 ```
 ```
 tGravityAcc.mean.X
+
+numeric
 
 time domain signals (identified with the leading 't' in the name of the variable),  
 from the Galaxy SII embedded accelerometer, measuring gravity acceleration on the x-axis
@@ -78,6 +90,8 @@ The mean value was recorded.
 ```
 tGravityAcc.mean.Y
 
+numeric
+
 time domain signals (identified with the leading 't' in the name of the variable),  
 from the Galaxy SII embedded accelerometer, measuring gravity acceleration on the y-axis
 
@@ -87,6 +101,8 @@ The mean value was recorded.
 ```
 tGravityAcc.mean.Z
 
+numeric
+
 time domain signals (identified with the leading 't' in the name of the variable),  
 from the Galaxy SII embedded accelerometer, measuring gravity acceleration on the z-axis
 
@@ -95,6 +111,8 @@ The mean value was recorded.
 ```
 ```
 tBodyAccJerk.mean.X
+
+numeric
 
 time domain signals (identified with the leading 't' in the name of the variable),  
 from the Galaxy SII embedded accelerometer, measuring body acceleration jerk signals  
@@ -106,6 +124,8 @@ The mean value was recorded.
 ```
 tBodyAccJerk.mean.Y
 
+numeric
+
 time domain signals (identified with the leading 't' in the name of the variable),  
 from the Galaxy SII embedded accelerometer, measuring body acceleration jerk signals  
 on the y-axis
@@ -115,6 +135,8 @@ The mean value was recorded.
 ```
 ```
 tBodyAccJerk.mean.Z
+
+numeric
 
 time domain signals (identified with the leading 't' in the name of the variable),  
 from the Galaxy SII embedded accelerometer, measuring body acceleration jerk signals  
@@ -126,6 +148,8 @@ The mean value was recorded.
 ```
 tBodyGyro.mean.X
 
+numeric
+
 time domain signals (identified with the leading 't' in the name of the variable),  
 from the Galaxy SII embedded gyroscope, measuring body acceleration on the x-axis
 
@@ -134,6 +158,8 @@ The mean value was recorded.
 ```
 ```
 tBodyGyro.mean.Y
+
+numeric
 
 time domain signals (identified with the leading 't' in the name of the variable),  
 from the Galaxy SII embedded gyroscope, measuring body acceleration on the y-axis
@@ -144,6 +170,8 @@ The mean value was recorded.
 ```
 tBodyGyro.mean.Z
 
+numeric
+
 time domain signals (identified with the leading 't' in the name of the variable),  
 from the Galaxy SII embedded gyroscope, measuring body acceleration on the z-axis
 
@@ -152,6 +180,8 @@ The mean value was recorded.
 ```
 ```
 tBodyGyroJerk.mean.X
+
+numeric
 
 time domain signals (identified with the leading 't' in the name of the variable),  
 from the Galaxy SII embedded gyroscope, measuring body acceleration jerk signals  
@@ -163,6 +193,8 @@ The mean value was recorded.
 ```
 tBodyGyroJerk.mean.Y
 
+numeric
+
 time domain signals (identified with the leading 't' in the name of the variable),  
 from the Galaxy SII embedded gyroscope, measuring body acceleration jerk signals  
 on the y-axis
@@ -172,6 +204,8 @@ The mean value was recorded.
 ```
 ```
 tBodyGyroJerk.mean.Z
+
+numeric
 
 time domain signals (identified with the leading 't' in the name of the variable),  
 from the Galaxy SII embedded gyroscope, measuring body acceleration jerk signals  
@@ -183,6 +217,8 @@ The mean value was recorded.
 ```
 tBodyAccMag.mean
 
+numeric
+
 time domain signals (identified with the leading 't' in the name of the variable),  
 from the Galaxy SII embedded accelerometer, measuring the magnitude of body  
 acceleration on the three-dimensional signals
@@ -192,6 +228,8 @@ The mean value was recorded.
 ```
 ```
 tGravityAccMag.mean
+
+numeric
 
 time domain signals (identified with the leading 't' in the name of the variable),  
 from the Galaxy SII embedded accelerometer, measuring the magnitude of gravity  
@@ -203,6 +241,8 @@ The mean value was recorded.
 ```
 tBodyAccJerkMag.mean
 
+numeric
+
 time domain signals (identified with the leading 't' in the name of the variable),  
 from the Galaxy SII embedded accelerometer, measuring the magnitude of body  
 acceleration on the three-dimensional jerk signals
@@ -212,6 +252,8 @@ The mean value was recorded.
 ```
 ```
 tBodyGyroMag.mean
+
+numeric
 
 time domain signals (identified with the leading 't' in the name of the variable),  
 from the Galaxy SII embedded gyroscope, measuring the magnitude of body  
@@ -223,6 +265,8 @@ The mean value was recorded.
 ```
 tBodyGyroJerkMag.mean
 
+numeric
+
 time domain signals (identified with the leading 't' in the name of the variable),  
 from the Galaxy SII embedded gyroscope, measuring the magnitude of body  
 acceleration on the three-dimensional jerk signals
@@ -233,6 +277,8 @@ The mean value was recorded.
 ```
 fBodyAcc.mean.X
 
+numeric
+
 frequency domain signals (identified with the leading 'f' in the name of the variable),  
 from the Galaxy SII embedded accelerometer, measuring Body acceleration on the x-axis
 
@@ -241,6 +287,8 @@ The mean value was recorded.
 ```
 ```
 fBodyAcc.mean.Y
+
+numeric
 
 frequency domain signals (identified with the leading 'f' in the name of the variable),  
 from the Galaxy SII embedded accelerometer, measuring Body acceleration on the y-axis
@@ -251,6 +299,8 @@ The mean value was recorded.
 ```
 fBodyAcc.mean.Z
 
+numeric
+
 frequency domain signals (identified with the leading 'f' in the name of the variable),  
 from the Galaxy SII embedded accelerometer, measuring Body acceleration on the z-axis
 
@@ -259,6 +309,8 @@ The mean value was recorded.
 ```
 ```
 fBodyAccJerk.mean.X
+
+numeric
 
 frequency domain signals (identified with the leading 'f' in the name of the variable),  
 from the Galaxy SII embedded accelerometer, measuring Body acceleration jerk signals  
@@ -270,6 +322,8 @@ The mean value was recorded.
 ```
 fBodyAccJerk.mean.Y
 
+numeric
+
 frequency domain signals (identified with the leading 'f' in the name of the variable),  
 from the Galaxy SII embedded accelerometer, measuring Body acceleration jerk signals  
 on the y-axis
@@ -279,6 +333,8 @@ The mean value was recorded.
 ```
 ```
 fBodyAccJerk.mean.Z
+
+numeric
 
 frequency domain signals (identified with the leading 'f' in the name of the variable),  
 from the Galaxy SII embedded accelerometer, measuring Body acceleration jerk signals  
@@ -290,11 +346,15 @@ The mean value was recorded.
 ```
 fBodyGyro.mean.X
 
+numeric
+
 The mean value was recorded.
 
 ```
 ```
 fBodyGyro.mean.Y
+
+numeric
 
 The mean value was recorded.
 
@@ -302,11 +362,15 @@ The mean value was recorded.
 ```
 fBodyGyro.mean.Z
 
+numeric
+
 The mean value was recorded.
 
 ```
 ```
 fBodyAccMag.mean
+
+numeric
 
 The mean value was recorded.
 
@@ -314,11 +378,15 @@ The mean value was recorded.
 ```
 fBodyBodyAccJerkMag.mean
 
+numeric
+
 The mean value was recorded.
 
 ```
 ```
 fBodyBodyGyroMag.mean
+
+numeric
 
 The mean value was recorded.
 
@@ -326,11 +394,15 @@ The mean value was recorded.
 ```
 fBodyBodyGyroJerkMag.mean
 
+numeric
+
 The mean value was recorded.
 
 ```
 ```
 tBodyAcc.std.X
+
+numeric
 
 The standard deviation was recorded.
 
@@ -338,11 +410,15 @@ The standard deviation was recorded.
 ```
 tBodyAcc.std.Y
 
+numeric
+
 The standard deviation was recorded.
 
 ```
 ```
 tBodyAcc.std.Z
+
+numeric
 
 The standard deviation was recorded.
 
@@ -350,11 +426,15 @@ The standard deviation was recorded.
 ```
 tGravityAcc.std.X
 
+numeric
+
 The standard deviation was recorded.
 
 ```
 ```
 tGravityAcc.std.Y
+
+numeric
 
 The standard deviation was recorded.
 
@@ -362,11 +442,15 @@ The standard deviation was recorded.
 ```
 tGravityAcc.std.Z
 
+numeric
+
 The standard deviation was recorded.
 
 ```
 ```
 tBodyAccJerk.std.X
+
+numeric
 
 The standard deviation was recorded.
 
@@ -374,11 +458,15 @@ The standard deviation was recorded.
 ```
 tBodyAccJerk.std.Y
 
+numeric
+
 The standard deviation was recorded.
 
 ```
 ```
 tBodyAccJerk.std.Z
+
+numeric
 
 The standard deviation was recorded.
 
@@ -386,11 +474,15 @@ The standard deviation was recorded.
 ```
 tBodyGyro.std.X
 
+numeric
+
 The standard deviation was recorded.
 
 ```
 ```
 tBodyGyro.std.Y
+
+numeric
 
 The standard deviation was recorded.
 
@@ -398,11 +490,15 @@ The standard deviation was recorded.
 ```
 tBodyGyro.std.Z
 
+numeric
+
 The standard deviation was recorded.
 
 ```
 ```
 tBodyGyroJerk.std.X
+
+numeric
 
 The standard deviation was recorded.
 
@@ -410,11 +506,15 @@ The standard deviation was recorded.
 ```
 tBodyGyroJerk.std.Y
 
+numeric
+
 The standard deviation was recorded.
 
 ```
 ```
 tBodyGyroJerk.std.Z
+
+numeric
 
 The standard deviation was recorded.
 
@@ -422,11 +522,15 @@ The standard deviation was recorded.
 ```
 tBodyAccMag.std
 
+numeric
+
 The standard deviation was recorded.
 
 ```
 ```
 tGravityAccMag.std
+
+numeric
 
 The standard deviation was recorded.
 
@@ -434,11 +538,15 @@ The standard deviation was recorded.
 ```
 tBodyAccJerkMag.std
 
+numeric
+
 The standard deviation was recorded.
 
 ```
 ```
 tBodyGyroMag.std
+
+numeric
 
 The standard deviation was recorded.
 
@@ -446,11 +554,15 @@ The standard deviation was recorded.
 ```
 tBodyGyroJerkMag.std
 
+numeric
+
 The standard deviation was recorded.
 
 ```
 ```
 fBodyAcc.std.X
+
+numeric
 
 The standard deviation was recorded.
 
@@ -458,11 +570,15 @@ The standard deviation was recorded.
 ```
 fBodyAcc.std.Y
 
+numeric
+
 The standard deviation was recorded.
 
 ```
 ```
 fBodyAcc.std.Z
+
+numeric
 
 The standard deviation was recorded.
 
@@ -470,11 +586,15 @@ The standard deviation was recorded.
 ```
 fBodyAccJerk.std.X
 
+numeric
+
 The standard deviation was recorded.
 
 ```
 ```
 fBodyAccJerk.std.Y
+
+numeric
 
 The standard deviation was recorded.
 
@@ -482,11 +602,15 @@ The standard deviation was recorded.
 ```
 fBodyAccJerk.std.Z
 
+numeric
+
 The standard deviation was recorded.
 
 ```
 ```
 fBodyGyro.std.X
+
+numeric
 
 The standard deviation was recorded.
 
@@ -494,11 +618,15 @@ The standard deviation was recorded.
 ```
 fBodyGyro.std.Y
 
+numeric
+
 The standard deviation was recorded.
 
 ```
 ```
 fBodyGyro.std.Z
+
+numeric
 
 The standard deviation was recorded.
 
@@ -506,11 +634,15 @@ The standard deviation was recorded.
 ```
 fBodyAccMag.std
 
+numeric
+
 The standard deviation was recorded.
 
 ```
 ```
 fBodyBodyAccJerkMag.std
+
+numeric
 
 The standard deviation was recorded.
 
@@ -518,11 +650,15 @@ The standard deviation was recorded.
 ```
 fBodyBodyGyroMag.std
 
+numeric
+
 The standard deviation was recorded.
 
 ```
 ```
 fBodyBodyGyroJerkMag.std
+
+numeric
 
 The standard deviation was recorded.
 

@@ -2,9 +2,9 @@
 
 ### Overview
 
-This project takes the data created from the experiment performed on 30 subjects, which measures different accelerometer and gyroscopic values from Samsung Galaxy II devices worn by each subject.  Each subject performed 6 main activities while wearing these devices, and were divided into two groups - a test group, and a training group. 
+This project takes the data created from the experiment performed on 30 subjects, which measures different accelerometer and gyroscopic values from Samsung Galaxy SII devices worn by each subject.  Each subject performed 6 main activities while wearing these devices, and were divided into two groups - a test group, and a training group. 
 
-An R code script named, **run_analysis.R**, was created to use and manipulate these data sets to create a tidy data set that only includes the variables subjects, activity, and only mean and standard deviation observations.  No parameters need to passed to the script.  Just ```source("run_analysis.R")``` and run the function ```run_analysis()```.
+An R code script named, **run_analysis.R**, was created to use and manipulate these data sets to create a tidy data set that only includes the variables subjects, activity, and only mean and standard deviation observations.  No parameters need to passed to the script.  Just use ```source("run_analysis.R")``` and run the function ```run_analysis()```.
 
 The working environment used is RStudio.
 
@@ -25,6 +25,7 @@ The following lists all the files that were used and created during the project.
 - README.md
 - Code Book.md
 - finalData_<*date and time of download*>.txt
+- finalData2_<*date and time of download*>.txt
 
 ### Descriptions of Each File
 
@@ -78,7 +79,7 @@ This was extracted from the source .zip file. his is the data set that contains 
 
 #### run_analysis.R
 
-This is the R code file. It is saved in the working directory. When run, it creates a function called run_analysis() that performs the following:
+This is the R code file. It is saved in the working directory. When run, it creates a function called ```run_analysis()``` that performs the following:
 
 - creates the destination directory structure relative to the working directory, if it does not already exist
 - downloads the source .zip file to the destination directory, saved as **dataset.zip**
@@ -106,8 +107,8 @@ This markdown text file you are reading.
 
 #### finalData_<*date and time of download*>.txt
 
-This is the tidy data set.  It was created using the write.table() function within the R code file **run_analysis.R**.  You can view the file [here](https://github.com/AmbroseT/getdataProject/blob/master/finalData_Fri%20Jul%2025%2012.29.42%202014.txt).
+This is the tidy data set.  It was created using the ```write.table()``` function within the R code file **run_analysis.R**.  This is the file used for submission, and will not bu uploaded to Github.
 
-Note: I found that within the RStudio console, the results looked good and were aligned as expected. It also reads into R with no issues using the read.table() function. It seems that writing out the file has created uneven columns with some data values. I plan on checking with the discussion group to see if it is related to the write.table() function I used, or if I may have missed a specific attribute in the function. It may be a fixed width requirement for text files or web pages; however, I am unable to investigate further, unfortunately, due to just running out of time.
+#### finalData2_<*date and time of download*>.txt
 
-
+This second tidy data set file was created solely for display purposes on the web or on Github. It was created using the ```write.fwf()``` function so that the columns would be aligned better, and thus would be more readable when viewing on Github. you can view the file [here](https://github.com/AmbroseT/getdataProject/blob/master/finalData2_Fri%20Jul%2025%2023.33.46%202014.txt)
