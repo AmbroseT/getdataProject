@@ -4,7 +4,7 @@
 
 This project takes the data created from an experiment performed on 30 subjects, which measured different accelerometer and gyroscopic values from Samsung Galaxy SII devices worn by each subject.  Each subject performed 6 main activities while wearing these devices, and were divided into two groups - a test group, and a training group. 
 
-An R code script named, **run_analysis.R**, was created to use and manipulate these data sets to create a tidy data set that only includes the variables ```subjects```, ```activity```, and only mean and standard deviation observations.  No parameters need to passed to the script.  Just use ```source("run_analysis.R")``` and run the function ```run_analysis()```.
+An R code script named, **run_analysis.R**, was created to use and manipulate these data sets to create a tidy data set that only includes the variables ```subjects```, ```activity```, and only mean and standard deviation observations.  No parameters need to be passed to the script.  Just use ```source("run_analysis.R")``` and run the function ```run_analysis()```.
 
 The working environment used is RStudio.
 
