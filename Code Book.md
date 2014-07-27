@@ -348,6 +348,9 @@ fBodyGyro.mean.X
 
 numeric
 
+frequency domain signals (identified with the leading 'f' in the name of the variable),  
+from the Galaxy SII embedded gyroscope, measuring signals on the x-axis 
+
 The mean value was recorded.
 
 ```
@@ -355,6 +358,9 @@ The mean value was recorded.
 fBodyGyro.mean.Y
 
 numeric
+
+frequency domain signals (identified with the leading 'f' in the name of the variable),  
+from the Galaxy SII embedded gyroscope, measuring signals on the y-axis
 
 The mean value was recorded.
 
@@ -364,6 +370,9 @@ fBodyGyro.mean.Z
 
 numeric
 
+frequency domain signals (identified with the leading 'f' in the name of the variable),  
+from the Galaxy SII embedded gyroscope, measuring signals on the z-axis
+
 The mean value was recorded.
 
 ```
@@ -371,6 +380,9 @@ The mean value was recorded.
 fBodyAccMag.mean
 
 numeric
+
+frequency domain signals (identified with the leading 'f' in the name of the variable),  
+from the Galaxy SII embedded accelerometer, measuring the magnitude if body signals.
 
 The mean value was recorded.
 
@@ -404,6 +416,9 @@ tBodyAcc.std.X
 
 numeric
 
+time domain signals (identified with the leading 't' in the name of the variable),  
+from the Galaxy SII embedded accelerometer, measuring Body acceleration on the x-axis
+
 The standard deviation was recorded.
 
 ```
@@ -411,6 +426,9 @@ The standard deviation was recorded.
 tBodyAcc.std.Y
 
 numeric
+
+time domain signals (identified with the leading 't' in the name of the variable),  
+from the Galaxy SII embedded accelerometer, measuring Body acceleration on the y-axis
 
 The standard deviation was recorded.
 
@@ -420,6 +438,9 @@ tBodyAcc.std.Z
 
 numeric
 
+time domain signals (identified with the leading 't' in the name of the variable),  
+from the Galaxy SII embedded accelerometer, measuring Body acceleration on the z-axis
+
 The standard deviation was recorded.
 
 ```
@@ -427,6 +448,9 @@ The standard deviation was recorded.
 tGravityAcc.std.X
 
 numeric
+
+time domain signals (identified with the leading 't' in the name of the variable),  
+from the Galaxy SII embedded accelerometer, measuring gravity acceleration on the x-axis
 
 The standard deviation was recorded.
 
@@ -436,6 +460,9 @@ tGravityAcc.std.Y
 
 numeric
 
+time domain signals (identified with the leading 't' in the name of the variable),  
+from the Galaxy SII embedded accelerometer, measuring gravity acceleration on the y-axis
+
 The standard deviation was recorded.
 
 ```
@@ -443,6 +470,9 @@ The standard deviation was recorded.
 tGravityAcc.std.Z
 
 numeric
+
+time domain signals (identified with the leading 't' in the name of the variable),  
+from the Galaxy SII embedded accelerometer, measuring gravity acceleration on the z-axis
 
 The standard deviation was recorded.
 
@@ -452,6 +482,10 @@ tBodyAccJerk.std.X
 
 numeric
 
+time domain signals (identified with the leading 't' in the name of the variable),  
+from the Galaxy SII embedded accelerometer, measuring body acceleration jerk signals  
+on the x-axis
+
 The standard deviation was recorded.
 
 ```
@@ -459,6 +493,10 @@ The standard deviation was recorded.
 tBodyAccJerk.std.Y
 
 numeric
+
+time domain signals (identified with the leading 't' in the name of the variable),  
+from the Galaxy SII embedded accelerometer, measuring body acceleration jerk signals  
+on the y-axis
 
 The standard deviation was recorded.
 
@@ -468,6 +506,10 @@ tBodyAccJerk.std.Z
 
 numeric
 
+time domain signals (identified with the leading 't' in the name of the variable),  
+from the Galaxy SII embedded accelerometer, measuring body acceleration jerk signals  
+on the z-axis
+
 The standard deviation was recorded.
 
 ```
@@ -475,6 +517,9 @@ The standard deviation was recorded.
 tBodyGyro.std.X
 
 numeric
+
+time domain signals (identified with the leading 't' in the name of the variable),  
+from the Galaxy SII embedded gyroscope, measuring body acceleration on the x-axis
 
 The standard deviation was recorded.
 
@@ -484,6 +529,9 @@ tBodyGyro.std.Y
 
 numeric
 
+time domain signals (identified with the leading 't' in the name of the variable),  
+from the Galaxy SII embedded gyroscope, measuring body acceleration on the y-axis
+
 The standard deviation was recorded.
 
 ```
@@ -491,6 +539,9 @@ The standard deviation was recorded.
 tBodyGyro.std.Z
 
 numeric
+
+time domain signals (identified with the leading 't' in the name of the variable),  
+from the Galaxy SII embedded gyroscope, measuring body acceleration on the z-axis
 
 The standard deviation was recorded.
 
@@ -500,6 +551,10 @@ tBodyGyroJerk.std.X
 
 numeric
 
+time domain signals (identified with the leading 't' in the name of the variable),  
+from the Galaxy SII embedded gyroscope, measuring body acceleration jerk signals  
+on the x-axis
+
 The standard deviation was recorded.
 
 ```
@@ -507,6 +562,10 @@ The standard deviation was recorded.
 tBodyGyroJerk.std.Y
 
 numeric
+
+time domain signals (identified with the leading 't' in the name of the variable),  
+from the Galaxy SII embedded gyroscope, measuring body acceleration jerk signals  
+on the y-axis
 
 The standard deviation was recorded.
 
@@ -516,6 +575,10 @@ tBodyGyroJerk.std.Z
 
 numeric
 
+time domain signals (identified with the leading 't' in the name of the variable),  
+from the Galaxy SII embedded gyroscope, measuring body acceleration jerk signals  
+on the z-axis
+
 The standard deviation was recorded.
 
 ```
@@ -523,6 +586,10 @@ The standard deviation was recorded.
 tBodyAccMag.std
 
 numeric
+
+time domain signals (identified with the leading 't' in the name of the variable),  
+from the Galaxy SII embedded accelerometer, measuring the magnitude of body  
+acceleration on the three-dimensional signals
 
 The standard deviation was recorded.
 
@@ -532,6 +599,10 @@ tGravityAccMag.std
 
 numeric
 
+time domain signals (identified with the leading 't' in the name of the variable),  
+from the Galaxy SII embedded accelerometer, measuring the magnitude of gravity  
+acceleration on the three-dimensional signals
+
 The standard deviation was recorded.
 
 ```
@@ -539,6 +610,10 @@ The standard deviation was recorded.
 tBodyAccJerkMag.std
 
 numeric
+
+time domain signals (identified with the leading 't' in the name of the variable),  
+from the Galaxy SII embedded accelerometer, measuring the magnitude of body  
+acceleration on the three-dimensional jerk signals
 
 The standard deviation was recorded.
 
@@ -548,6 +623,10 @@ tBodyGyroMag.std
 
 numeric
 
+time domain signals (identified with the leading 't' in the name of the variable),  
+from the Galaxy SII embedded gyroscope, measuring the magnitude of body  
+acceleration on the three-dimensional signals
+
 The standard deviation was recorded.
 
 ```
@@ -555,6 +634,10 @@ The standard deviation was recorded.
 tBodyGyroJerkMag.std
 
 numeric
+
+time domain signals (identified with the leading 't' in the name of the variable),  
+from the Galaxy SII embedded gyroscope, measuring the magnitude of body  
+acceleration on the three-dimensional jerk signals
 
 The standard deviation was recorded.
 
@@ -564,6 +647,9 @@ fBodyAcc.std.X
 
 numeric
 
+frequency domain signals (identified with the leading 'f' in the name of the variable),  
+from the Galaxy SII embedded accelerometer, measuring Body acceleration on the x-axis
+
 The standard deviation was recorded.
 
 ```
@@ -571,6 +657,9 @@ The standard deviation was recorded.
 fBodyAcc.std.Y
 
 numeric
+
+frequency domain signals (identified with the leading 'f' in the name of the variable),  
+from the Galaxy SII embedded accelerometer, measuring Body acceleration on the y-axis
 
 The standard deviation was recorded.
 
@@ -580,6 +669,9 @@ fBodyAcc.std.Z
 
 numeric
 
+frequency domain signals (identified with the leading 'f' in the name of the variable),  
+from the Galaxy SII embedded accelerometer, measuring Body acceleration on the z-axis
+
 The standard deviation was recorded.
 
 ```
@@ -587,6 +679,10 @@ The standard deviation was recorded.
 fBodyAccJerk.std.X
 
 numeric
+
+frequency domain signals (identified with the leading 'f' in the name of the variable),  
+from the Galaxy SII embedded accelerometer, measuring body acceleration jerk signals  
+on the x-axis
 
 The standard deviation was recorded.
 
@@ -596,6 +692,10 @@ fBodyAccJerk.std.Y
 
 numeric
 
+frequency domain signals (identified with the leading 'f' in the name of the variable),  
+from the Galaxy SII embedded accelerometer, measuring body acceleration jerk signals  
+on the y-axis
+
 The standard deviation was recorded.
 
 ```
@@ -603,6 +703,10 @@ The standard deviation was recorded.
 fBodyAccJerk.std.Z
 
 numeric
+
+frequency domain signals (identified with the leading 'f' in the name of the variable),  
+from the Galaxy SII embedded accelerometer, measuring body acceleration jerk signals  
+on the z-axis
 
 The standard deviation was recorded.
 
@@ -612,6 +716,9 @@ fBodyGyro.std.X
 
 numeric
 
+frequency domain signals (identified with the leading 'f' in the name of the variable),  
+from the Galaxy SII embedded gyroscope, measuring Body acceleration on the x-axis
+
 The standard deviation was recorded.
 
 ```
@@ -619,6 +726,9 @@ The standard deviation was recorded.
 fBodyGyro.std.Y
 
 numeric
+
+frequency domain signals (identified with the leading 'f' in the name of the variable),  
+from the Galaxy SII embedded gyroscope, measuring Body acceleration on the y-axis
 
 The standard deviation was recorded.
 
@@ -628,6 +738,9 @@ fBodyGyro.std.Z
 
 numeric
 
+frequency domain signals (identified with the leading 'f' in the name of the variable),  
+from the Galaxy SII embedded gyroscope, measuring Body acceleration on the z-axis
+
 The standard deviation was recorded.
 
 ```
@@ -635,6 +748,10 @@ The standard deviation was recorded.
 fBodyAccMag.std
 
 numeric
+
+frequency domain signals (identified with the leading 'f' in the name of the variable),  
+from the Galaxy SII embedded accelerometer, measuring the magnitude of body acceleration  
+on the three-dimensional signals
 
 The standard deviation was recorded.
 

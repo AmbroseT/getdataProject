@@ -2,9 +2,9 @@
 
 ### Overview
 
-This project takes the data created from the experiment performed on 30 subjects, which measures different accelerometer and gyroscopic values from Samsung Galaxy SII devices worn by each subject.  Each subject performed 6 main activities while wearing these devices, and were divided into two groups - a test group, and a training group. 
+This project takes the data created from an experiment performed on 30 subjects, which measured different accelerometer and gyroscopic values from Samsung Galaxy SII devices worn by each subject.  Each subject performed 6 main activities while wearing these devices, and were divided into two groups - a test group, and a training group. 
 
-An R code script named, **run_analysis.R**, was created to use and manipulate these data sets to create a tidy data set that only includes the variables subjects, activity, and only mean and standard deviation observations.  No parameters need to passed to the script.  Just use ```source("run_analysis.R")``` and run the function ```run_analysis()```.
+An R code script named, **run_analysis.R**, was created to use and manipulate these data sets to create a tidy data set that only includes the variables ```subjects```, ```activity```, and only mean and standard deviation observations.  No parameters need to passed to the script.  Just use ```source("run_analysis.R")``` and run the function ```run_analysis()```.
 
 The working environment used is RStudio.
 
@@ -100,7 +100,7 @@ There are comments within the code that give more detail to each of the tasks li
 
 #### README.md
 
-This markdown text file you are reading.
+This markdown file you are reading.
 
 #### Code Book.md
 
@@ -108,8 +108,8 @@ This markdown text file you are reading.
 
 #### finalData_<*date and time of download*>.txt
 
-This is the tidy data set.  It was created using the ```write.table()``` function within the R code file **run_analysis.R**.  This is the file used for submission, and will not bu uploaded to Github.
+This is the tidy data set. It was created using the ```write.table()``` function within the R code file **run_analysis.R**. It can be read back into R for viewing and manipulation. This is the file used for submission.
 
 #### finalData2_<*date and time of download*>.txt
 
-This second tidy data set file was created solely for display purposes on the web or on Github. It was created using the ```write.fwf()``` function so that the columns would be aligned better, and thus would be more readable when viewing on Github. you can view the file [here](https://github.com/AmbroseT/getdataProject/blob/master/finalData2_Fri%20Jul%2025%2023.33.46%202014.txt)
+This second tidy data set file was created solely for display purposes from within the Github text editor, for better readability. It was created using the ```write.fwf()``` function so that the columns would be aligned better, and thus would be more readable when viewing on Github. you can view the file [here](https://github.com/AmbroseT/getdataProject/blob/master/finalData2_Fri%20Jul%2025%2023.33.46%202014.txt).

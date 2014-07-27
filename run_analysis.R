@@ -33,10 +33,9 @@ run_analysis <- function() {
     unzip("./data/temp/dataset.zip", exdir="./data/temp")    
   } else datedownloaded <- "localCopy"
   
-  ## ----------------------------------------------------------------------------
-  ## remove the ':' from the date since it is an invalid character for file names 
-  ## in Windows
-  ## ----------------------------------------------------------------------------
+  ## -------------------------------------------------------------
+  ## remove the ':' from the date since it is an invalid character
+  ## -------------------------------------------------------------
   datedownloaded <- gsub(":", ".", datedownloaded)
   
   ## ----------------------------------------------------
@@ -91,14 +90,18 @@ run_analysis <- function() {
   
   message("Columns relabeled...")
   
+  ## ---------------------------
   ## combine data sets via rbind
   ## - test followed by train
+  ## ---------------------------
   data <- rbind(test, train)
   activity <- rbind(testActivity, trainActivity)
   subjects <- rbind(testSubjects, trainSubjects)
-   
-  ## combine data sets via cbind
-  ## - subjects, then activity then features data 
+  
+  ## --------------------------------------------
+  ## combine data sets' columns via cbind
+  ## - subjects, then activity then features data
+  ## --------------------------------------------
   allData <- cbind(subjects,activity,data)
   
   message("Data merged...")
